@@ -1,5 +1,7 @@
 package com.javaex.ex04;
 
+import java.util.Objects;
+
 public class Point {
 
 	//필드
@@ -39,4 +41,21 @@ public class Point {
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		return x+y;
+	}
+
+	public boolean equals(Object obj) {
+		Point p = ((Point)obj);
+		if(this.x == p.x && this.y == p.y) {
+		    return true;	
+		}else {
+			return false;
+		}
+		
+	}
+	
+	
 }

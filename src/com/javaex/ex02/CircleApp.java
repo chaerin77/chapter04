@@ -19,6 +19,7 @@ public class CircleApp {
 	
 	    Circle c03 = new Circle(100);
 	    cList.add(c03);
+
 	    
 	    System.out.println(cList.toString());
 	    System.out.println(cList.get(0).getRadius());
